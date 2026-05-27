@@ -1,8 +1,7 @@
 # 🚀 AutoML Framework
 
-<<<<<<< HEAD
 An end-to-end modular AutoML framework with a production-style frontend and backend.
-=======
+
 ## Production Stack
 
 This repository now contains a complete frontend + backend AutoML SaaS prototype:
