@@ -9,10 +9,7 @@ from src.preprocessing.imputer import handle_missing_values
 import os
 import joblib
 
-from src.preprocessing.encoder import (
-    encode_target,
-    encode_features
-)
+from src.preprocessing.encoder import encode_target,encode_features
 
 from src.preprocessing.scaler import scale_features
 from src.preprocessing.splitter import split_data
@@ -41,10 +38,7 @@ def run_pipeline(data_path, target_column):
     df = handle_missing_values(df)
 
     # Encode target column
-    df, encoder = encode_target(
-        df,
-        target_column
-    )
+    df, encoder = encode_target(df,target_column)
 
     # Separate features and target
     X = df.drop(columns=[target_column])
